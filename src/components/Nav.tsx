@@ -17,13 +17,9 @@ export default function Nav() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-[99999] bg-white" style={{ boxShadow: '0 1px 0 rgba(0,0,0,0.1)' }}>
-      <div className="max-w-5xl mx-auto px-6 flex items-center justify-between h-16">
-        <Link to="/" onClick={() => setOpen(false)}>
-          <img src="/images/PIAP1.png" alt="Pea In A Pod Productions" className="h-10 w-auto" />
-        </Link>
-
+      <div className="max-w-5xl mx-auto px-6 flex items-center justify-center h-16 relative">
         <button
-          className="md:hidden text-[#333] p-2"
+          className="md:hidden absolute right-6 text-[#333] p-2"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -37,10 +33,10 @@ export default function Nav() {
               <li key={label}>
                 <Link
                   to={to}
-                  className="block px-[22px] text-sm font-medium transition-opacity"
-                  style={{ color: active ? '#2ea3f2' : 'rgba(0,0,0,0.6)' }}
-                  onMouseEnter={e => { if (!active) (e.currentTarget as HTMLElement).style.opacity = '0.7' }}
-                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.opacity = '1' }}
+                  className="block px-[18px] font-bold transition-colors"
+                  style={{ fontSize: '18px', color: active ? '#000000' : 'rgba(0,0,0,0.6)' }}
+                  onMouseEnter={e => { if (!active) (e.currentTarget as HTMLElement).style.color = '#000000' }}
+                  onMouseLeave={e => { if (!active) (e.currentTarget as HTMLElement).style.color = 'rgba(0,0,0,0.6)' }}
                 >
                   {label}
                 </Link>
@@ -58,8 +54,8 @@ export default function Nav() {
                 <Link
                   to={to}
                   onClick={() => setOpen(false)}
-                  className="text-sm font-medium"
-                  style={{ color: location.pathname === to ? '#2ea3f2' : 'rgba(0,0,0,0.6)' }}
+                  className="font-bold"
+                  style={{ fontSize: '18px', color: location.pathname === to ? '#000000' : 'rgba(0,0,0,0.6)' }}
                 >
                   {label}
                 </Link>
