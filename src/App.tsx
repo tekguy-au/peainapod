@@ -1,26 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Nav from '@/components/Nav'
-import Hero from '@/components/Hero'
-import Services from '@/components/Services'
-import Testimonials from '@/components/Testimonials'
-import Portfolio from '@/components/Portfolio'
-import About from '@/components/About'
-import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+import HomePage from '@/pages/Home'
+import ServicesPage from '@/pages/Services'
+import TestimonialsPage from '@/pages/Testimonials'
+import PortfolioPage from '@/pages/Portfolio'
+import AboutPage from '@/pages/About'
 import TermsPage from '@/pages/Terms'
-
-function HomePage() {
-  return (
-    <>
-      <Hero />
-      <Services />
-      <Portfolio />
-      <Testimonials />
-      <About />
-      <Contact />
-    </>
-  )
-}
 
 export default function App() {
   return (
@@ -28,6 +14,10 @@ export default function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/testimonials" element={<TestimonialsPage />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="/about-kp" element={<AboutPage />} />
         <Route path="/terms" element={<TermsPage />} />
       </Routes>
       <Footer />
