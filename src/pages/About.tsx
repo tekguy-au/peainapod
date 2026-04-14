@@ -85,9 +85,6 @@ export default function AboutPage() {
               create work that resonates. Whether directing her own projects or collaborating with
               other creators, she brings both heart and professionalism to everything she does.
             </p>
-            <p className="italic font-semibold" style={{ color: '#333' }}>
-              "Professional dreamer, full-time storyteller."
-            </p>
           </div>
           <div className="flex gap-4 mt-8">
             <a
