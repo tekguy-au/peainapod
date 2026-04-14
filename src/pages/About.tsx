@@ -5,9 +5,8 @@ export default function AboutPage() {
     <main className="pt-16">
       {/* Hero — black bg, KP1.png at bottom */}
       <section
-        className="relative flex items-end justify-center bg-black bg-no-repeat bg-bottom bg-cover"
+        className="relative flex items-end justify-center bg-black"
         style={{
-          backgroundImage: 'url(/images/KP1.png)',
           paddingTop: '10vw',
           paddingBottom: '10vw',
           minHeight: '70vh',
