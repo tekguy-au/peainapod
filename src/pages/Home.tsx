@@ -8,11 +8,6 @@ const services = [
     body: 'Bring your characters and narration to life with authentic, emotive voice performances tailored to your project.',
   },
   {
-    icon: '/images/photographer-icon-05.png',
-    title: 'Audio Editing',
-    body: 'Crystal-clear audio that enhances your storytelling — from dialogue clean-up to full sound design.',
-  },
-  {
     icon: '/images/photographer-icon-04.png',
     title: 'ScriptWriting',
     body: 'Compelling scripts that capture your voice and drive your narrative forward with purpose and clarity.',
@@ -26,11 +21,6 @@ const services = [
     icon: '/images/photographer-icon-02.png',
     title: 'Post-Production',
     body: 'End-to-end finishing that polishes your project into a professional, audience-ready final product.',
-  },
-  {
-    icon: '/images/photographer-icon-01.png',
-    title: 'Video Editing',
-    body: 'Dynamic editing that shapes your footage into a cohesive, engaging story your audience will remember.',
   },
 ]
 
@@ -129,7 +119,7 @@ export default function HomePage() {
       {/* Section 1 — Services grid */}
       <section style={{ backgroundColor: '#ffffff', paddingTop: 80, paddingBottom: 80 }}>
         <div className="max-w-5xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-0">
             {services.map(s => (
               <ServiceCard key={s.title} {...s} />
             ))}
