@@ -109,7 +109,7 @@ export default function HomePage() {
           backgroundSize: 'contain',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center 20px',
-          minHeight: 598,
+          minHeight: 618,
           padding: 0,
           marginTop: 0,
           marginBottom: -100,
