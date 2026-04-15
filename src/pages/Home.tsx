@@ -111,7 +111,7 @@ export default function HomePage() {
           backgroundPosition: 'center top',
           minHeight: 598,
           padding: 0,
-          marginTop: -100,
+          marginTop: -70,
           marginBottom: -100,
         }}
       />
