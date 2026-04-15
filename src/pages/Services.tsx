@@ -10,16 +10,6 @@ const services = [
     ],
   },
   {
-    title: 'AUDIO EDITING',
-    description: 'Immersive audio that enhances storytelling across formats.',
-    features: [
-      'Clean-up (noise, hums, clicks)',
-      'Layered sound design & mixing',
-      'Remote voice direction & pacing notes',
-      'Script-to-audio syncing',
-    ],
-  },
-  {
     title: 'SCRIPTING & PREPRODUCTION',
     description: 'Turning ideas into production-ready scripts with character, pacing and heart.',
     features: [
