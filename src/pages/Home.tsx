@@ -108,11 +108,11 @@ export default function HomePage() {
           backgroundImage: 'url(/images/PIAP1.png)',
           backgroundSize: 'contain',
           backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center 20px',
-          minHeight: 618,
+          backgroundPosition: 'center top',
+          minHeight: 598,
           padding: 0,
           marginTop: 0,
-          marginBottom: -100,
+          marginBottom: 0,
         }}
       />
 
