@@ -117,7 +117,7 @@ export default function HomePage() {
       />
 
       {/* Section 1 — Services grid */}
-      <section style={{ backgroundColor: '#ffffff', paddingTop: 32, paddingBottom: 80 }}>
+      <section style={{ backgroundColor: '#ffffff', paddingTop: 0, paddingBottom: 80 }}>
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-0">
             {services.map(s => (
